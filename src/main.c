@@ -49,7 +49,6 @@ void app_main() {
             for (int j = 0; j < 2; j++) {
                 
                 //debounce logic
-
                 int64_t now = esp_timer_get_time();
                 int level = gpio_get_level(col_pins[j]);
                 uint8_t pressed = (level == 0) ? 1 : 0;
@@ -69,6 +68,6 @@ void app_main() {
             gpio_set_level(row_pins[i], 1); 
         }
 
-        vTaskDelay(pdMS_TO_TICKS(30)); 
+        vTaskDelay(pdMS_TO_TICKS(30)); //minimum threshold is something >5 , or can disable watchdog entirely
     }
 }
