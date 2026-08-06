@@ -14,11 +14,11 @@ def handle_key(row, col):
     if row == 0 and col == 0:
         subprocess.Popen(["open", "-a", "Visual Studio Code"])
     elif row == 0 and col == 1:
-        webbrowser.open("https://www.youtube.com/watch?v=bpD-JVy2zV4&t=99s")
-    elif row == 1 and col == 0:
         subprocess.Popen(["open", "-a", "Music"])
+    elif row == 1 and col == 0:
+        webbrowser.open("https://www.youtube.com/watch?v=bpD-JVy2zV4&t=99s")
     elif row == 1 and col == 1:
-        subprocess.Popen(["open", "-a", "iTerm"])
+        subprocess.Popen(["open", "-a", "Kicad"])
     else:
         print(f"No action mapped for {row} {col}")
 
