@@ -20,7 +20,7 @@ Reads the serial output, parses out the row/col pair, and dispatches to whatever
  
 **PCB**
  
-![PCB](images/pcb.jpg)
+![PCB](images/pcb.png)
  
 **Assembled Macropad**
 
